@@ -1,0 +1,535 @@
+<!doctype html> {% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <!--links-->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+        /* footer*/
+
+        .footer-dark {
+            position: fixed;
+            width: 100%;
+            padding: 50px 0;
+            color: #f0f9ff;
+            background-color: #282d32;
+        }
+
+        .footer-dark h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer-dark ul {
+            padding: 0;
+            list-style: none;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .footer-dark ul a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+
+        .footer-dark ul a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item:not(.social) {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+
+        @media (max-width:425px) {
+            .footer-dark {
+                position: fixed;
+            }
+        }
+
+        .footer-dark .item.text {
+            margin-bottom: 36px;
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item.text {
+                margin-bottom: 0;
+            }
+        }
+
+        .footer-dark .item.text p {
+            opacity: 0.6;
+            margin-bottom: 0;
+        }
+
+        .footer-dark .item.social {
+            text-align: center;
+        }
+
+        @media (max-width:991px) {
+            .footer-dark .item.social {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .footer-dark .item.social>a {
+            font-size: 20px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+            margin: 0 8px;
+            color: #fff;
+            opacity: 0.75;
+        }
+
+        .footer-dark .item.social>a:hover {
+            opacity: 300;
+        }
+
+        .footer-dark .copyright {
+            text-align: center;
+            padding-top: 24px;
+            opacity: 0.3;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+        /*fotter*/
+
+        .ty {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .subject {
+            margin: 100px;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            row-gap: 10px;
+            column-gap: 3em;
+        }
+
+        #tk {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+
+
+        .t {
+            color: white;
+            margin-left: 20px;
+            color:
+        }
+
+        .t1 {
+            position: relative;
+            left: 500px;
+        }
+
+        .yu {
+            list-style: none;
+            display: flex
+        }
+
+        .social-icon {
+            height: 40px;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(182, 167, 167);
+            font-size: 27px;
+            margin-right: 11px;
+            cursor: pointer t
+        }
+
+        .rg {
+            height: 123px;
+        }
+
+        .social-icon i {
+            transition: 0.4s all
+        }
+
+        .social-icon:hover i {
+            transform: scale(1.4)
+        }
+
+        .ski {
+            height: 400px;
+            width: 100%;
+            margin: 100px 0 100px 0;
+        }
+
+        .navbar {
+            background-color: black;
+        }
+
+        #gh {
+            background-color: black;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+        li a:hover{
+            text-decoration: none;
+        }
+         #sub {
+                display: flex;
+                justify-content: center;
+                margin-top: 70px;
+                text-decoration: underline;
+            }
+
+    </style>
+    <title>Sem-2 subject</title>
+
+</head>
+
+<body>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+
+    <!--navbar-->
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+      class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand fst-italic text-white"
+          href="http://localhost:8000">College.</a>
+        <button class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item t">
+              <a class="nav-link text-white"
+                href="http://localhost:8000">Home</a>
+            </li>
+            <li class="nav-item t">
+                        <a class="nav-link text-white" href="http://localhost:8000/about/about">About</a>
+                    </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link  text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Semster
+              </a>
+              <ul class="dropdown-menu"
+                aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item"
+                    href="http://localhost:8000/semster/semster1">Sem-1</a></li>
+                <li><a class="dropdown-item"
+                    href="http://localhost:8000/semster/semster2">Sem-2</a></li>
+                <!---<li><hr class="dropdown-divider"></li>-->
+                <li><a class="dropdown-item"
+                    href="http://localhost:8000/semster/semster3">Sem-3</a></li>
+                <li><a class="dropdown-item"
+                    href="http://localhost:8000/semster/semster4">Sem-4</a></li>
+                <li><a class="dropdown-item"
+                    href="http://localhost:8000/semster/semster5">Sem-5</a></li>
+                <!---<li><hr class="dropdown-divider"></li>-->
+                <li><a class="dropdown-item"
+                    href="http://localhost:8000/semster/semster6">Sem-6</a></li>
+                <li><a class="dropdown-item"
+                    href="http://localhost:8000/semster/semster7">Sem-7</a></li>
+                <li><a class="dropdown-item"
+                    href="http://localhost:8000/semster/semster8">Sem-8</a></li>
+                <!---<li><hr class="dropdown-divider"></li>-->
+
+              </ul>
+            </li>
+            <li class="nav-item t">
+              <a class="nav-link text-white"
+                href="http://localhost:8000/notice/notice">Notice</a>
+            </li>
+            <li class="nav-item t">
+              <a class="nav-link text-white"
+                href="http://localhost:8000/program/program">Programming</a>
+            </li>
+
+            <li class="nav-item t">
+              <a class="nav-link text-white"
+                href="http://localhost:8000/attendance/attendance">Attendance</a>
+            </li>
+            <li class="nav-item t">
+              <a class="nav-link text-white"
+                href="http://localhost:8000/contact/contact">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+
+
+    </nav>
+<div id="sub">
+
+    <i>
+        <h4 style="font-weight: bolder">Subjects</h4>
+    </i>
+</div>
+
+
+
+    <div class="subject ">
+        <!-- Example single info button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-info btn-sm dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false ">
+                    <b>English</b>
+                </button>
+            <ul class="dropdown-menu ">
+                <li style="color: rgb(219, 53, 11) ">1 -Vocabulary Building</li>
+
+                <li>
+                    <a class="dropdown-item " href="# ">Pdf 1</a>
+                </li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">2 - Basic Writing Skills</li>
+                <li><a class="dropdown-item " href="# ">Pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">3 - Identify Common Error In Writing Skill </li>
+                <li><a class="dropdown-item " href="# ">Pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">4 - Nature And Style Of Sensible Writing</li>
+                <li><a class="dropdown-item " href="# ">Pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">5 - Writing Practice</li>
+                <li><a class="dropdown-item " href="# ">Pdf 1</a></li>
+                <hr>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info btn-sm dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false ">
+                    <b>Chemistry 1</b>
+                </button>
+            <ul class="dropdown-menu ">
+
+                <li style="color: rgb(219, 53, 11) ">1 -Atomic And Molecular Structure</li>
+
+                <li>
+                    <a class="dropdown-item " href="# ">Pdf
+                1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">2 -Spectroscopic Techniques And Applications</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">3 -Intermolecular Forces And Potential Energy</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">4 -Use Of Energy In Chemical Equilibria</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">5 -Perodic Properties</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">6 -Stereochemistry</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">7 -Organic Reaction</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+            </ul>
+        </div>
+        <div class="btn-group ">
+            <button type="button " class="btn btn-info btn-sm dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false ">
+                    <b>Mathematics 11A</b>
+                </button>
+            <ul class="dropdown-menu ">
+                <li style="color: rgb(219, 53, 11) ">1 - Basic Probablity</li>
+
+                <li><a class="dropdown-item " href="# "> pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">2 - Continuous Probablity Distribution</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">3 - Bivariate Distribution</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">4 - Basic Statics</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">5 -Applied Statics</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">6 - Small Samples</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info btn-sm dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false ">
+                    <b>Programming For Problem Solving</b>
+                </button>
+            <ul class="dropdown-menu ">
+
+                <li style="color: rgb(219, 53, 11) ">1 - Introduction To Programming</li>
+
+                <li>
+                    <a class="dropdown-item " href="# ">Pdf
+                1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">2 - Arithmetic Expression</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">3 - Branching And Loop</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">4 - Arrays</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">5 - Basic_Algorithm</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">6 -Function</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">7 - Recursion</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">8 - Structure</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">9 - Pointers</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+                <li style="color: rgb(219, 53, 11) ">10 - File_Handling</li>
+                <li><a class="dropdown-item " href="# ">pdf 1</a></li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <!--fotter-->
+
+    <div class="footer-dark ">
+        <footer>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-sm-6 col-md-3 item ">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>
+                                <a href="# ">Home</a>
+                            </li>
+                            <li>
+                                <a href="# ">Semster</a>
+                            </li>
+                            <li>
+                                <a href="# ">Programming</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item ">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="# ">Attendance</a></li>
+                            <li>
+                                <a href="# ">Notice</a>
+                            </li>
+                            <li>
+                                <a href="# ">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text ">
+                        <h3>College Name</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium est error dolorem. Harum, fugiat non, ut architecto blanditiis consectetur, sequi esse nulla officiis culpa atque dolore quis neque. Dolorem, voluptatibus?</p>
+                    </div>
+                    <div class="col item social "><a href="# "><i class="icon ion-social-facebook "></i></a><a href="# "><i class="icon ion-social-twitter "></i></a><a href="# "><i
+                                    class="icon ion-social-snapchat "></i></a><a href="# "><i
+                                    class="icon ion-social-instagram "></i></a></div>
+                </div>
+                <p class="copyright ">Ritikkumar © 2021</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js "></script>
+
+
+
+
+
+    <!--fotter-->
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+</html>
