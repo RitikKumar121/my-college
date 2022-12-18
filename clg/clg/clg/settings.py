@@ -28,8 +28,8 @@ SECRET_KEY = 'django-insecure-qldedgsb)!z598-u*(%w5-$#k1uucy2%z8@7fqv3b&xxm8478%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['collegelearning.herokuapp.com']
-
+#ALLOWED_HOSTS = ['collegelearning.herokuapp.com']
+ALLOWED_HOST = ['*']
 
 # Application definition
 
@@ -130,10 +130,12 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+# STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 # Default primary key field type
